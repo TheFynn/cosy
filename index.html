@@ -8,13 +8,56 @@
     <title>cosy - Home</title>
 </head>
 <body>
-  <div class="menuBar">
-    <nav>
-      <a>Home</a>
-      <a href="./products.html">Products</a>
-      <a href="./about.html">About</a>
-    </nav>
+  <nav class="" id="primaryNav">
+    <ul>
+      <li>
+        <a href="">home</a>
+      </li>
+      <li>
+        <a href="./products.html">products</a>
+      </li>
+      <div class="subItemContainer">
+        <li><a>table</a></li>
+        <li><a>lamp</a></li>
+        <li><a>couch</a></li>
+        <li><a>chair</a></li>
+      </div>
+      <li>
+        <a href="./about.html">about</a>
+      </li>
+    </ul>
+  </nav>
+
+  <button class="hamburgerMenu" id="hamburgerMenu">
+    <div class="hamburgerBar"></div>
+    <div class="hamburgerBar"></div>
+    <div class="hamburgerBar"></div>
+  </button>
+
+
+  <div class="imgContainer">
+    <img src="./assets/images/books-gefbfc2d8a_1920.jpg" alt="">
+    <img src="./assets/images/furniture-gff5bb78dc_1920.jpg" alt="">
+    <img src="./assets/images/home-g7a850a5e1_1920.jpg" alt="">
+    <img src="./assets/images/workplace-gf658affaf_1920.jpg" alt="">
+    <img src="./assets/images/books-gefbfc2d8a_1920.jpg" alt="">
+    <img src="./assets/images/furniture-gff5bb78dc_1920.jpg" alt="">
+    <img src="./assets/images/home-g7a850a5e1_1920.jpg" alt="">
+    <img src="./assets/images/workplace-gf658affaf_1920.jpg" alt="">
   </div>
   
+
+  <script>
+
+const hamburgerMenu = document.getElementById('hamburgerMenu');
+const primaryNav = document.getElementById('primaryNav');
+
+
+hamburgerMenu.addEventListener('click', () => {
+  hamburgerMenu.classList.toggle('close');
+  primaryNav.classList.toggle('exposed');
+});
+
+  </script>
 </body>
 </html>
